@@ -1,0 +1,12 @@
+SELECT states.division, people.team, COUNT(people.team)
+FROM states
+JOIN people ON states.state_abbrev=people.state_code
+GROUP BY states.division, people.team;
+*/returns # of members of each team in each geographic division
+
+SELECT states.state_name, COUNT(people.shirt_or_hat)
+FROM states
+JOIN people ON states.state_abbrev=people.state_code
+WHERE people.shirt_or_hat='hat'
+GROUP BY people.shirt_or_hat, states.state_name;
+*/returns # of hats going to each state*/
