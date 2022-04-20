@@ -27,3 +27,4 @@ ORDER BY avgpoints DESC;
 
 */this gives the max and average points by each state, with average scores in descending order. without the GROUP BY state_code then you will only get 1 result back. 
 Need this to list all states */
+*/the group by clause groups returned rows by this data */
