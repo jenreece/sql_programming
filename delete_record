@@ -1,0 +1,5 @@
+DELETE FROM people
+WHERE id_number='590';
+
+DELETE FROM tablename
+WHERE field1=value1;
