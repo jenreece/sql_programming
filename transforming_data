@@ -1,0 +1,29 @@
+SELECT LOWER(first_name), UPPER(last_name)
+FROM people;
+
+SELECT first_name, SUBSTR(last_name, 1, 5)         
+FROM people;     
+
+*/start at the first character and then return 5 characters */                                 
+*/a neg number, like -2, will start from the end (last_name, -2) */
+
+SELECT REPLACE(first_name, "a", "-")              
+FROM people;               
+
+*/this replaces every letter a in this field with a dash */
+
+
+SELECT quiz_points
+FROM people
+ORDER BY CAST(quiz_points AS CHAR);
+
+*/ CAST changes the data type of values and changes results.  In this case, the points are no longer integers but characters */
+
+
+SELECT state_code, MAX(quiz_points) AS maxpoints, AVG(quiz_points) AS avgpoints
+FROM people
+GROUP BY state_code
+ORDER BY avgpoints DESC;
+
+*/this gives the max and average points by each state, with average scores in descending order. without the GROUP BY state_code then you will only get 1 result back. 
+Need this to list all states */
