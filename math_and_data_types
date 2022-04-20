@@ -1,0 +1,16 @@
+SELECT 4+2;      */answer is 6 */
+SELECT 1/3;      */answer is 0 as they are treated as integers */
+SELECT 1/3.0;    */answer is 0.3333 as the 3 is set as a floating point value. but precision is limited */
+SELECT 3>1;      */answer is 1, which is a logical expression for true, false comes back as 0 */
+
+SELECT first_name, quiz_points
+FROM people
+WHERE quiz_points>=70;
+
+SELECT MAX(quiz_points), MIN(quiz_points)
+FROM people;   
+*/answer is the value for each in 2 columns */
+
+SELECT team, COUNT(*), SUM(quiz_points), AVG(quiz_points)
+FROM people
+GROUP BY team;
