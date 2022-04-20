@@ -1,0 +1,9 @@
+INSERT INTO tablename (field1, field2)
+VALUES (values1, value2);
+
+INSERT INTO people
+(first_name, last_name)
+VALUES
+('George', 'White'),
+('Bob', 'Smith'),
+('Carol', NULL);
