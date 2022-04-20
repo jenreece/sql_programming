@@ -1,0 +1,11 @@
+UPDATE tablename
+SET field1=value1, field2=value2
+WHERE condition;
+
+UPDATE people
+SET last_name='Morrison' 
+WHERE id_number=175;     */ updates the last name for a specific record */
+
+UPDATE people
+SET company='ABC International'
+WHERE company='Fisher LLC';      */updates all instances of this company name */
